@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Work | Noel Casfer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bio.html">Bio / CV</a>
+      <a href="research.html">Research</a>
+      <a href="creative.html">Creative Work</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+  </header>
+
+  <main>
+<section class="creative-list">
+  <h1>creative work</h1>
+
+  <div class="project">
+    <p class="main-line">
+      <span class="type">Short film:</span>
+      From the Center of the Periphery, One Sees the Periphery — in pre-production
+     <button> <a href="http://wildbouquets.noelcasfer.com" target="_blank">Link</a></button>
+    </p>
+    <p class="sub-line">
+      Selected for INTERSECCIÓN LAB, Intersección Film Festival (A Coruña, 2022)
+    </p>
+  </div>
+
+  <div class="project">
+    <p class="main-line">
+      <span class="type">Interactive project:</span>
+      Wild Digital Bouquets — 2022–ongoing
+    
+     <button> <a href="http://wildbouquets.noelcasfer.com" target="_blank">Link</a></button>
+    </p>
+  </div>
+
+  <div class="project">
+    <p class="main-line">
+      <span class="type">Interactive project:</span>
+      Notes from the Silicon Age — 2022
+     <button> <a href="http://wildbouquets.noelcasfer.com" target="_blank">Link</a></button>
+    </p>
+
+  </div>
+
+  <div class="project">
+    <p class="main-line">
+      <span class="type">Short film:</span>
+      Habitar — 2019
+     <button> <a href="http://wildbouquets.noelcasfer.com" target="_blank">Link</a></button>
+    </p>
+    <p class="sub-line">
+      Screened at Suburbinale Festival (Wien, 2022)
+    </p>
+  </div>
+
+  <div class="project">
+    <p class="main-line">
+      <span class="type">Short film:</span>
+      Isto Antes Era Campo — 2019
+     <button> <a href="http://wildbouquets.noelcasfer.com" target="_blank">Link</a></button>
+    </p>
+    <p class="sub-line">
+      Screened at Xuventude Crea Forum (Santiago de Compostela, 2019)
+    </p>
+  </div>
+</section>
+  </main>
+   </div>
+
+  <footer>
+    Personal website of Noel Casfer.
+  </footer>
+</body>
+
+<script>
+  const formatFilter = document.getElementById("format-filter");
+  const topicFilter = document.getElementById("topic-filter");
+  const cards = document.querySelectorAll("#projects-grid .card");
+
+  function filterProjects() {
+    const selectedFormat = formatFilter.value;
+    const selectedTopic = topicFilter.value;
+
+    cards.forEach((card) => {
+      const cardFormat = card.dataset.format;
+      const cardTopics = card.dataset.topic.split(" ");
+
+      const matchesFormat =
+        selectedFormat === "all" || cardFormat === selectedFormat;
+
+      const matchesTopic =
+        selectedTopic === "all" || cardTopics.includes(selectedTopic);
+
+      if (matchesFormat && matchesTopic) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  formatFilter.addEventListener("change", filterProjects);
+  topicFilter.addEventListener("change", filterProjects);
+</script>
+</html>

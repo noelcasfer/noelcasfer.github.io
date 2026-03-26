@@ -1,69 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noel Castro Fernández</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f1ea;
-      color: #222;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    .card {
-      max-width: 650px;
-      margin: 20px;
-      padding: 40px;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    h1 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-    }
-
-    p {
-      line-height: 1.6;
-      color: #555;
-      font-size: 1.05rem;
-    }
-
-    .note {
-      margin-top: 24px;
-      font-size: 0.95rem;
-      color: #777;
-    }
-
-    a {
-      color: #5f7a61;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Noel Castro Fernandez</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="card">
-    <h1>Noel Castro Fernández</h1>
-    <p>
-      Soy investigador y docente interesado en la relación entre territorio,
-      cultura y medios digitales. Este espacio reunirá próximamente algunos de mis
-      proyectos, trabajos e iniciativas.
-    </p>
-    <p class="note">
-      Web en construcción.
-    </p>
+    <div class="layout">
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bio.html">Bio / CV</a>
+      <a href="research.html">Research</a>
+      <a href="creative.html">Creative Work</a>
+      <!--<a href="teaching.html">Teaching</a>-->
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Noel Castro Fernandez</h1>
+      <p class="intro">
+        My name is Noel. I’m a visual designer, media maker and researcher. I’m currently pursuing a PhD at the University of A Coruña, in Galicia (Spain) as well as developing a multimedia project on urban natures. I’m interested in exploring how technology shapes the ways people understands places and landscapes. This is my main research space and portfolio site for my creative works.
+      </p>
+      <p>You can find me at:</p>
+      <button><a href="https://pdi.udc.es/es/File/Pdi/ZC98M" target="_blank">UDC portal</a></button>
+      <button><a href="https://grupodeestudosterritoriais.com/noel-castro-fernandez/" target="_blank">Territorial Studies Group website</a></button>
+      <button><a href="https://orcid.org/0000-0002-6266-4529" target="_blank">ORCID</a></button>
+      <button><a href="https://www.linkedin.com/in/noel-castro-fernandez-228b0415a" target="_blank">LinkedIn</a></button>
+    </section>
+    <section class="mosaic">
+  <img src="images/img1.jpg" alt="">
+  <img src="images/img2.jpg" alt="">
+  <img src="images/img3.jpg" alt="">
+  <img src="images/img4.jpg" alt="">
+  <img src="images/img5.jpg" alt="">
+  <img src="images/img6.jpg" alt="">
+</section>
   </main>
+  </div>
 </body>
 </html>
