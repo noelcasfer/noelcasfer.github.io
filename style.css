@@ -46,7 +46,7 @@ nav a {
 
 }
 
-button {
+button, .btn {
     background-color:brown;
   margin: 0px 5px 0px 0px;
   color:rgb(230, 222, 222);
@@ -58,7 +58,11 @@ button {
   cursor:pointer;
 }
 
-button a {
+.tomail {
+  color: grey!Important;
+}
+
+a, button a {
   color: white;
   font-family:'Adamina';
   text-transform:lowercase;
@@ -298,38 +302,10 @@ header {
 header nav {
   flex-direction:row;
 }
-
-  .carousel {
-    gap: 10px;
-  }
-
-  .carousel-track {
-    min-height: 320px;
-  }
-
-  .carousel-slide img {
-    height: 320px;
-  }
 }
 
 @media (max-width: 700px) {
-  .carousel {
-    flex-direction: column;
-  }
-
-  .carousel-btn {
-    display: none;
-  }
-
-  .carousel-track {
-    min-height: 240px;
-  }
-
-  .carousel-slide img {
-    height: 240px;
-  }
-  
-  main {
+    main {
     padding-left:0px;
     padding-right:0px;
   }
