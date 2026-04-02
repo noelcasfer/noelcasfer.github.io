@@ -282,6 +282,23 @@ ul {
 }
 
 @media (max-width: 900px) {
+
+.layout {
+  display:flex;
+  flex-direction:column;
+}
+
+header {
+  justify-content:center;
+  padding-left:20px;
+  position:fixed;
+  width:100%;
+}
+
+header nav {
+  flex-direction:row;
+}
+
   .carousel {
     gap: 10px;
   }
@@ -311,11 +328,23 @@ ul {
   .carousel-slide img {
     height: 240px;
   }
+  
+  main {
+    padding-left:0px;
+    padding-right:0px;
+  }
+
+  .inner-nav {
+  margin-top:50px;
+  width:100%;
+  font-size:13px;
+  }
 }
 
 @media (max-width: 700px) {
   .hero, .section-box {
-    padding: 28px;
+    padding: 24px;
+    padding-top:100px;
   }
 
   h1 {
